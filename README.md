@@ -32,29 +32,29 @@ GIE est une application web sécurisée et responsive développée dans le cadre
 
 ## Installation locale (XAMPP)
 1. Clone le repo
-    git clone https://github.com/josoakaleba18/plateforme-gie.git
-    cd plateforme-gie
+    - git clone https://github.com/josoakaleba18/plateforme-gie.git
+    - cd plateforme-gie
 
 2. Backend
-    cd ../backend_gie
-    composer install
+    - cd ../backend_gie
+    - composer install
 
 3. Configure .env
-    DATABASE_URL="mysql://root:@127.0.0.1:3306/gie_db?serverVersion=8.0"
-    Crée la base sur phpMyAdmin (gie_db, utf8mb4_unicode_ci)
+    - DATABASE_URL="mysql://root:@127.0.0.1:3306/gie_db?serverVersion=8.0"
+    - Crée la base sur phpMyAdmin (gie_db, utf8mb4_unicode_ci)
 
 4. Importe gie_db.sql (script fourni)
 
-5. Migrations & fixturesBash
-    php bin/console doctrine:migrations:migrate
-    php bin/console doctrine:fixtures:load
+5. Migrations & fixtures
+    - php bin/console doctrine:migrations:migrate
+    - php bin/console doctrine:fixtures:load
 
 6. Lance le serveur
     Bashsymfony serve
     - http://127.0.0.1:8000/api (doc API)
 
 7. Frontend
-    cd ../frontend_gie
-    npm install
-    npm run dev
+    - cd ../frontend_gie
+    - npm install
+    - npm run dev
     - http://localhost:5173
