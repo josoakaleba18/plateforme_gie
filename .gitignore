@@ -1,0 +1,10 @@
+#Fichiers à ignorer par git
+
+# Symfony
+/.env.local
+/.env*.local
+
+# React
+/node_modules/
+/.env.local
+/.env*.local
